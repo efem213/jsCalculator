@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>JS CALCULATOR</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <script src="jsCalculator.js"></script>
+
+  </head>
+  <body>
+      
+    <div class="container-fluid">
+      <div class="row text-center">
+        <div class="col">
+          <h1>JS CALCULATOR</h1>
+          <h5> Designed and Coded by EFE AKPULLUKCU</h5>
+        </div>
+      </div>
+        <div class="row text-center">
+          <div class="col-10">
+        <div class="display bg-light text-dark my-3 py-3 fw-bolder fs-2 d-flex justify-content-center" id="display">0</div> 
+      </div>
+      <div class="col-2">
+      <div class="display bg-secondary text-dark my-3 py-3 fw-bolder fs-2 d-flex justify-content-center" id="secondaryDisplay">0</div> 
+    </div>
+    </div>  
+    <div class="container">
+      <div class="row">
+        <div class="col">
+        <a id="clear" class="btn btn-warning btn-lg d-flex justify-content-center " onclick="updateAC()">AC</a>
+        </div>
+        <div class="col">
+        <a id="divide" class="btn btn-primary btn-lg d-flex justify-content-center " onclick="updateDisplay('divide')">/</a>
+      </div>
+      <div class="col">
+        <a id="multiply" class="btn btn-primary btn-lg d-flex justify-content-center " onclick="updateDisplay('multiply')">X</a>
+      </div>
+      </div>
+    </div> 
+    <div class="container my-3">
+      <div class="row">
+        <div class="col">
+        <a id="seven" class="btn btn-secondary btn-lg d-flex justify-content-center" onclick="updateDisplay(7)">7</a>
+        </div>
+        <div class="col">
+        <a id="eight" class="btn btn-secondary btn-lg d-flex justify-content-center" onclick="updateDisplay(8)">8</a>
+      </div>
+      <div class="col">
+        <a id="nine" class="btn btn-secondary btn-lg d-flex justify-content-center" onclick="updateDisplay(9)">9</a>
+      </div>
+      <div class="col">
+        <a id="subtract" class="btn btn-primary btn-lg d-flex justify-content-center" onclick="updateDisplay('subtract')">-</a>
+      </div>
+      </div>
+    </div>
+
+
+    <div class="container my-3">
+      <div class="row">
+        <div class="col">
+        <a id="four" class="btn btn-secondary btn-lg d-flex justify-content-center" onclick="updateDisplay(4)">4</a>
+        </div>
+        <div class="col">
+        <a id="five" class="btn btn-secondary btn-lg d-flex justify-content-center" onclick="updateDisplay(5)">5</a>
+      </div>
+      <div class="col">
+        <a id="six" class="btn btn-secondary btn-lg d-flex justify-content-center" onclick="updateDisplay(6)">6</a>
+      </div>
+      <div class="col">
+        <a id="add" class="btn btn-primary btn-lg d-flex justify-content-center" onclick="updateDisplay('add')">+</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container my-3">
+    <div class="row">
+      <div class="col">
+        <a id="one" class="btn btn-secondary btn-lg d-flex justify-content-center" onclick="updateDisplay(1)">1</a>
+      </div>
+      <div class="col"> 
+        <a id="two" class="btn btn-secondary btn-lg d-flex justify-content-center" onclick="updateDisplay(2)">2</a>
+      </div>
+      <div class="col">          
+        <a id="three" class="btn btn-secondary btn-lg d-flex justify-content-center" onclick="updateDisplay(3)">3</a>
+      </div>
+      <div class="col">  
+        <a id="equals" class="btn btn-primary btn-lg d-flex justify-content-center" onclick="updateDisplay('equals')">=</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container my-3">
+    <div class="row">
+      <div class="col">
+        <a id="zero" class="btn btn-secondary btn-lg d-flex justify-content-center" onclick="updateDisplay(0)">0</a>
+      </div>
+      <div class="col">
+        <a id="decimal" class="btn btn-primary btn-lg d-flex justify-content-center" onclick="updateDisplay('decimal')">.</a>
+      </div>
+      <div class="col">
+        <a id="negative-value" class="btn btn-primary btn-lg d-flex justify-content-center" onclick="updateDisplay('negative-value')">+/-</a>
+      </div>
+    </div>
+  </div>
+
+    </div> 
+ 
+</div> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
+
+
